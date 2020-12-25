@@ -13,12 +13,15 @@ import com.Project.utils.CommonMethods;
 
 public class viewEmployeeListPageElements extends CommonMethods {
 
-	@FindBy(id = "sidenav")
+	@FindBy(xpath = "//ul[@id='sidenav']/li")
 	public List<WebElement> personalDetails;
 	
 	@FindBy(xpath="//ul[@id='sidenav']//li[10]/a")
 	public WebElement qualification;
 
+	@FindBy(xpath="//ul[@id='sidenav']//li[2]/a")
+	public WebElement contactDetails;
+	
 	public viewEmployeeListPageElements() {
 		PageFactory.initElements(BaseClass.driver, this);
 	}
@@ -26,19 +29,24 @@ public class viewEmployeeListPageElements extends CommonMethods {
 	
 	
 	
-//	public void choose(List<WebElement> element, String textToSelect) {
-//
-//		for (WebElement detail : element) {
-//			if (detail.getText().equals(textToSelect))
-//				
-//			detail.click();
-//			break;
-//
-//		}
-//	}
+	public void choose(List<WebElement> personalDetails, String textToSelect) {
+
+		
+		for (WebElement detail : personalDetails) {
+			if (detail.getText().equals(textToSelect))
+				
+			detail.click();
+			break;
+
+		}
+	}
 	
 	public void chooseQualification(String textToSelect) {
 		qualification.click();
+	}
+	
+	public void chooseContactDetails() {
+		contactDetails.click();
 	}
 
 }

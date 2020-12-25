@@ -26,8 +26,8 @@ public class AddWorkExperienceSteps extends CommonMethods{
 	    dashboard.navigateToEmployeeList();
 	}
 
-	@Then("user enters valid employee id {string} and save")
-	public void user_enters_valid_employee_id_and_save(String id) {
+	@Then("user enters valid employee id {string} and search")
+	public void user_enters_valid_employee_id_and_search(String id) {
 	 //   employeeInfo.searchById(id);
 		
 //		employeeInfo.empId.sendKeys(id,Keys.ENTER);

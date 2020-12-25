@@ -80,11 +80,11 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters valid employee id \"10774\" and save",
+  "name": "user enters valid employee id \"10774\" and search",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.Project.steps.AddWorkExperienceSteps.user_enters_valid_employee_id_and_save(java.lang.String)"
+  "location": "com.Project.steps.AddWorkExperienceSteps.user_enters_valid_employee_id_and_search(java.lang.String)"
 });
 formatter.result({
   "status": "passed"
